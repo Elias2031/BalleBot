@@ -1,0 +1,184 @@
+            /****Configurações Gerais****/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 16px;
+}
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-image: linear-gradient(85deg, #23232e, rgb(126, 82, 115))
+}
+
+span{
+    font-weight: bold;
+}
+
+.container{
+    width: 70%;
+    margin: 0 15%;
+}               
+
+hr{
+    clear: both;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/****Cabeçalho****/
+#cabecalho{
+    background-color: rgba(35, 35, 46, 0.1);
+}
+
+#imagem{
+    float: left;
+    margin: 5px;
+}
+
+#menu{
+    float: right;
+}
+
+#menu_lista{
+    list-style-type: none;
+    display: flex;
+}
+
+.ativa{
+    transform: translateX(0);
+}
+
+#menu_lista li{
+    float: right;
+    margin: 25px 10px;
+}
+
+#menu_lista li a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu_hamburguer{
+    cursor: pointer;
+    float: right;
+    padding: 15px 15px 0 0;
+    display: none;
+}
+
+#menu_hamburguer div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+/****Conteudo Principal(SECTION 1)****/
+#principal h1{
+    padding: 40px 0px 30px 0px;
+    font-size: 60px;
+    color: white;
+}
+
+#principal h2{
+    font-family: sarala;
+    font-style: normal;
+    color: white;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+#principal button{
+    padding: 13px 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#texto{
+    float: left;
+}
+
+#robo{
+    float: right;
+    background: url(../fundo_robo.svg) no-repeat center;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+/****Conteudo Secundario(SECTION 2)****/
+#linha2{
+    clear: both;
+    width: 20%;
+    margin: 0 40% 30px 40%;
+}
+
+#secundario{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#secundario h3{
+    margin-top: 100px;
+    font-size: 16px;
+    color: white;
+    width: 20%;
+    margin: 0 40% 0 40%;
+}
+
+#secundario ul{
+    color: white;
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+#secundario li{
+    margin-top: 15px;
+}
+
+@media (max-width:820px) {
+    #menu_lista{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 45vw;
+        height: 83vh;
+        background-color: rgba(35, 35, 46, 0.6);
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    #menu_lista li{
+        margin: 0;
+        opacity: 1;
+    }
+
+    #menu_hamburguer{
+        display: block;
+    }
+
+    #linha2{
+        clear: both;
+        width: 40%;
+        margin: 0 30% 30px 30%;
+    }
+
+    #secundario h3{
+        margin-top: 20px;
+        font-size: 16px;
+        color: white;
+        width: 40%;
+        margin: 0 30% 0 30%;
+    }
+}
+
+@media (max-width:560px){
+    #secundario li{
+        margin: 20px 5px;
+    }
+}
