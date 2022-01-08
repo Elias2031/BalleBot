@@ -11,4 +11,6 @@
 - CSS
 - Javascript
 
+Visualize o projeto : https://elias2031.github.io/BalleBot/
+
 <img src="img/tela_inicial.png">
